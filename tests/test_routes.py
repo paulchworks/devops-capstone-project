@@ -117,7 +117,7 @@ class TestAccountService(TestCase):
         self.assertEqual(response.status_code, status.HTTP_400_BAD_REQUEST)
 
     def test_unsupported_media_type(self):
-        """It should not Create an Account when sending the wrong media type"""
+        """It should not Create an Account when sending the wrong media type!"""
         account = AccountFactory()
         response = self.client.post(
             BASE_URL,
